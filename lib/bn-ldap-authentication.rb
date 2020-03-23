@@ -44,7 +44,7 @@ module LdapAuthenticator
             end
         end
 
-        auth['info']['roles'] = result[role_field].first
+        auth['info']['roles'] = result[role_field]
 
         auth
     end
